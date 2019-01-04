@@ -1,0 +1,18 @@
+<div class="card">
+  <ngx-charts-area-chart-stacked (legendlabelclick)="onLegendLabelClick($event)" (select)="select($event)" [curve]="curve"
+    [gradient]="gradient" [legend]="showLegend" [results]="dateData" [roundDomains]="roundDomains" [scheme]="colorScheme"
+    [schemeType]="schemeType" [showGridLines]="showGridLines" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+    [timeline]="timeline" [tooltipDisabled]="tooltipDisabled" [xAxis]="showXAxis" [xAxisLabel]="xAxisLabel" [yAxis]="showYAxis"
+    [yAxisLabel]="yAxisLabel" class="line-container">
+  </ngx-charts-area-chart-stacked>
+</div>
+
+
+<div class="card">
+  <ngx-charts-gauge (legendlabelclick)="onLegendLabelClick($event)" (select)="select($event)" [angleSpan]="gaugeAngleSpan"
+    [bigSegments]="gaugeLargeSegments" [legend]="showLegend" [margin]="margin ? [marginTop, marginRight, marginBottom, marginLeft] : null"
+    [max]="gaugeMax" [min]="gaugeMin" [results]="single" [scheme]="colorScheme" [showAxis]="gaugeShowAxis"
+    [smallSegments]="gaugeSmallSegments" [startAngle]="gaugeStartAngle" [textValue]="gaugeTextValue" [tooltipDisabled]="tooltipDisabled"
+    [units]="gaugeUnits" class="gauge-container">
+  </ngx-charts-gauge>
+</div>
